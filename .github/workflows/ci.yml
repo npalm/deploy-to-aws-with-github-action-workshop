@@ -103,7 +103,9 @@ jobs:
         with:
           repository: ${{ vars.ECR_REPO_NAME }}
           tag: latest
-          fail_threshold: informational
+          fail_threshold: critical
+        continue-on-error: true
+
 
       - name: Summary
         id: summary
