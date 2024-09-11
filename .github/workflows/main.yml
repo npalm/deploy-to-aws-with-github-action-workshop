@@ -1,6 +1,6 @@
 on:
   workflow_dispatch:
-  push: [main]
+  push:
   pull_request:
     types: [opened]
     branches: [main]
